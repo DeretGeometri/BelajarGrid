@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    background-color: #888;
+    border: 2px solid #434343;
+}
+
+.grid>div {
+    width: 100%;
+    background-color: darkcyan;
+    /* box-sizing: border-box; */
+    color: #dedede;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(12, 1fr);
+    grid-template-areas:
+        'satu satu satu satu satu satu satu satu satu satu satu satu'
+        'dua dua tiga tiga tiga tiga tiga tiga tiga tiga tiga tiga'
+        'empat empat empat lima lima lima lima lima lima lima lima lima';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid .kotak-satu {
+    grid-area: satu;
+    width: 100%;
+    text-align: center;
+}
+
+.grid .kotak-dua {
+    grid-area: dua;
+    width: 140px;
+    text-align: center;
+}
+
+
+.grid .kotak-tiga {
+    grid-area: tiga;
+    width: 780px;
+    text-align: center;
+}
+
+
+.grid .kotak-empat {
+    grid-area: empat;
+    width: 220px;
+    text-align: center;
+}
+
+
+.grid .kotak-lima {
+    grid-area: lima;
+    width: 700px;
+    text-align: center;
+}
+
+.grid .kotak-enam {
+    grid-column: 1/5;
+    width: 300px;
+    text-align: center;
+}
+
+
+.grid .kotak-tujuh {
+    grid-column: 5/-1;
+    width: 620px;
+    text-align: center;
+}
+
+.grid .kotak-delapan {
+    grid-column: 1/6;
+    width: 380px;
+    text-align: center;
+}
+
+
+.grid .kotak-sembilan {
+    grid-column: 6/-1;
+    width: 540px;
+    text-align: center;
+}
+
+.grid .kotak-sepuluh {
+    grid-column: 1/7;
+    width: 460px;
+    text-align: center;
+}
+
+
+.grid .kotak-sebelas {
+    grid-column: 7/-1;
+    width: 460px;
+    text-align: center;
+}
+
+
+.grid .kotak-duabelas {
+    grid-column: 1/5;
+    width: 300px;
+    text-align: center;
+}
+
+.grid .kotak-tigabelas {
+    grid-column: 5/9;
+    width: 300px;
+    text-align: center;
+}
+
+.grid .kotak-empatbelas {
+    grid-column: 9/-1;
+    width: 300px;
+    text-align: center;
+}
+
+.grid .kotak-limabelas {
+    grid-column: 1/4;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-enambelas {
+    grid-column: 4/7;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-tujuhbelas {
+    grid-column: 7/10;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-delapanbelas {
+    grid-column: 10/-1;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-sembilanbelas {
+    grid-column: 1/7;
+    grid-row: 2 span;
+    width: 460px;
+    text-align: center;
+}
+
+.grid .kotak-sembilanbelas p {
+    transform: translateY(30px);
+}
+
+.grid .kotak-duapuluh {
+    grid-column: 7/10;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-duapuluhsatu {
+    grid-column: 10/-1;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-duapuluhdua {
+    grid-column: 7/10;
+    grid-row: 10/-1;
+    width: 220px;
+    text-align: center;
+}
+
+.grid .kotak-duapuluhtiga {
+    grid-column: 10/-1;
+    grid-row: 10/-1;
+    width: 220px;
+    text-align: center;
+
+}
